@@ -88,9 +88,9 @@ public class Snake extends SpriteMovement implements Colisionable, Movible{
 		// TODO Auto-generated method stub
 		
 	}
-	
+
 	@Override
-	public void mover() {
-		
+	public void move() {
+		// TODO Auto-generated method stub
 	}
 }

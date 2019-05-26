@@ -24,6 +24,7 @@ public abstract class SpriteMovement implements Movible{
 	public void setdY(int dY) {
 		this.dY = dY;
 	}
-	public abstract void mover();
+	@Override
+	public void move() {}
 	
 }

@@ -91,8 +91,6 @@ public class Snake extends SpriteMovement implements Colisionable, Movible{
 	
 	@Override
 	public void mover() {
-		if(direction==Dir.left) {
-			setdX(+SPEED);
-		}
+		
 	}
 }

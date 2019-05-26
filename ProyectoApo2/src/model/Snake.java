@@ -91,6 +91,24 @@ public class Snake extends SpriteMovement implements Colisionable, Movible{
 
 	@Override
 	public void move() {
-		// TODO Auto-generated method stub
+		if(direction==Dir.left) {
+			int nX=getdX();	
+			nX--;
+			setdX(nX);
+			}
+		else if(direction==Dir.right) {
+			int nX=getdX();
+			nX++;
+			setdX(nX);
+		}
+		else if (direction==Dir.up) {
+			int nY=getdX();
+			nY--;
+			setdY(nY);
+		}else if(direction==Dir.down) {
+			int nY=getdX();
+			nY++;
+			setdY(nY);
+		}
 	}
 }

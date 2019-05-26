@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+
 import javax.sound.sampled.Clip;
 
 public class Game {
@@ -9,6 +11,7 @@ public class Game {
 	private Clip songAmbiente;
 	private int level;
 	private Player player;
+	private ArrayList<Snake> fSnake;
 	
 	
 	public Game() {
@@ -16,10 +19,11 @@ public class Game {
 		level =1;
 		player = new Player(null);
 		rootPlayer = null;
+		fSnake= new ArrayList<>();
 		
 	}
 	public void startGame() {
-		//TODO initialize the game;
+		
 	}
 
 	public int getScore() {

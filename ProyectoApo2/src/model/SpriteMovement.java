@@ -1,17 +1,12 @@
 package model;
 
-public abstract class SpriteMovement extends Sprite implements Movible {
+public abstract class SpriteMovement implements Movible{
 	private int dX;
 	private int dY;
 	
-	public SpriteMovement(int x, int y) {
-		super(x, y);
-		
-	}
-	@Override
-	public void move() {
-		 setX(getX()+dX);
-		 setY(getY()+dY);
+	public SpriteMovement(int dX, int dY) {
+		this.dX=dX;
+		this.dY=dY;
 	}
 
 	public int getdX() {
@@ -29,5 +24,6 @@ public abstract class SpriteMovement extends Sprite implements Movible {
 	public void setdY(int dY) {
 		this.dY = dY;
 	}
+	public abstract void mover();
 	
 }

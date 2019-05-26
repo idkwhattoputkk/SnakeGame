@@ -1,12 +1,10 @@
 package model;
 
-import javafx.scene.shape.Circle;
+
 
 public interface Colisionable {
-	
+	public final static int SIZE = 25;
 	public boolean isColision(Colisionable c);
-	public void colisionaWith(Colisionable c);
-	
-	public Circle getColision();
+	public void hayColision(Colisionable c);
 	
 }
